@@ -1,0 +1,26 @@
+[Event "Chess Openings Trainer"]
+[Site "https://play.google.com/store/apps/details?id=com.beadapps.chessrepertoiretrainer.paid"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 c5 6. Nc3 cxd4 (6... Be7 7. O-O {and now} cxd4 (7... d5 {but} 8. cxd5 exd5 9. Bb5 Bc6 10. Qa4 Bxb5 11. Qxb5 Qd7 12. Ne5 Qxb5 13. Nxb5 Na6 14. Rd1 {gave White dangerous pressure in Petrosian-Keres, USSR Ch, Moscow 1951.+1.7})
+8. exd4) 7. exd4 Be7 8. O-O d5 {This is perhaps Black's most classical approach to the position. Black grabs his share of central space, and in return White gets good attacking chances in the IQP positions that arise.} 9. cxd5 Nxd5 (9... exd5 {keeps Black's share of space but leaves the b7-bishop poorly placed.} 10. Bb5 Nbd7 11. Ne5 O-O 12. Bc6 {+2.0})
+10. Ne5 {White introduces the threat of Bb5+ and clears the path for White's queen to enter the fray.} O-O 11. Qh5 Nf6 {Black reintroduces a key defender of his kingside. The alternatives are not attractive but have been played by some strong players:} (11... f5 12. Bc4 {and now:} Nd7 (12... Na6 13. Nxd5 exd5 14. Bd3 Qe8 15. Qh3 Bc8 16. Bf4 Nb4 17. Rfe1 Nxd3 18. Nxd3 Qd8 19. Rac1 {is much better for White, I.Almasi-Bernei, Hungarian Team Ch 2006/7. +2.8})
+(12... a6 13. Re1 b5 14. Bb3 b4 15. Nxd5 Bxd5 16. Bxd5 Qxd5 17. Qf3 {Yusupov-Karpov, Ajaccio blitz 2007. +1.0})
+13. Nxd5 exd5 14. Bb3 Nxe5 15. dxe5 Kh8 16. Rd1 Qd7 17. Rd3 g6 18. Qd1 f4 19. Bd2 d4 20. e6 {Petrosian-Bagirov, USSR Spartakiad, Moscow 1967.} Qc6 21. Qg4 {+1.4})
+(11... g6 12. Qh3 Nc6 (12... Nxc3 13. bxc3 Nd7 14. Bh6 Re8 15. Bb5 Nxe5 16. dxe5 Qc7 17. Bxe8 Rxe8 18. Qg3 {was slightly better for White in Danielian-Brodsky, Cappelle la Grande 2006 +2.0})
+13. Bh6 Nxd4 (13... Re8 14. Bb5 Rc8 15. Rad1 Nxc3 16. bxc3 Bf8 17. Rd3 Qe7 18. Rg3 Red8 19. Bxf8 Qxf8 20. Bxc6 Bxc6 21. Qh4 Bb5 22. Re1 Qa3 23. Nxf7 Rd7 24. Nh6 Kg7 25. Ng4 Rf7 26. Qh6 Kg8 27. Qg5 {1-0 Kosic-B.Smith, Budapest 2006})
+14. Bxf8 Bxf8 15. Nxd5 Qxd5 16. Rfe1 Bb4 17. Be4 Qxe5 18. Bxb7 Bxe1 19. Bxa8 Ne2 20. Kh1 Bxf2 {Werle-Naiditsch, European Ch, Dresden 2007 and now} 21. Qf3 {leads to a very interesting game.} Bh4 22. Rf1 f5 23. Rd1 Qxb2 24. Qe3 Kf7 25. Qh6 {+0.5})
+12. Qh4 Nc6 {over-aggressive; this is a very careless, yet seemingly natural move, that an unsuspecting opponent might make without much thought} (12... Nbd7 {this is the most solid approach} 13. Rd1 Ne4 (13... Re8 {continues in a solid vein; then White will complete his development and play for a kingside attack} 14. Bg5 h6 15. Bxh6 gxh6 16. Qg3 Kf8 17. Nxf7 Kxf7 18. Qg6 Kf8 19. Qxh6 Kg8 20. Qg6)
+14. Qh3 Ndf6 {if Black thought he had the position firmly under control, he was rudely awakened by White's next move, but it appears that all is not lost} 15. d5 {White's thematic central breakthrough} Nxc3 16. bxc3 Bxd5 (16... exd5 {after} 17. Nd7 {Black had nothing better than} h6 {allowing} 18. Nxf8 {in Chatalbashev-Pogorelov, Benidonn 2007} Bxf8 19. Be3 {+1.5})
+17. Bg5 {and now:} g6 (17... h6 18. Bxh6 gxh6 19. Qxh6 {the first edition of this book stated that "the concealed attack of White's rook on d1 against the black queen on d8 makes defence almost impossible for Black" and gave the lines} Qc7 (19... Qc8 20. Qg5 Kh8 21. Ng4 Nxg4 22. Qh5 Kg7 23. Qxg4 Kh8 24. Qh5 Kg7 25. Qh7 Kf6 26. Qh6 Ke5 27. c4 {+6.0})
+(19... Qe8 {or}) (19... Bd6 {alternatively} 20. Ng4 {+7.0}) 20. Qg5 Kh8 21. Qh4 {Is it fair to assume that White had read the book and Black hadn't? +6.5})
+18. Qh4 {gives White powerful threats of c4 and Ng4. However, this may not be the end of the story, since after} h6 19. Bxh6 Nd7 20. Qg3 Nxe5 21. Bxf8 {+0.5})
+13. Bg5 {it is still not obvious at a glance that Black is teetering on the brink of total collapse} g6 (13... h6 14. Bxf6 Bxf6 15. Qe4)
+(13... Qxd4 14. Nxc6) (13... Nxe5 {may be relatively best as after} 14. Bxf6 Nxd3 15. Bxe7 {Black can fight on an exchange down with} Qd7 16. Bxf8 Rxf8 17. Rab1 Rc8 {+3.0})
+14. Ba6 h6 (14... Nxe5 15. dxe5 Bxa6 16. exf6 {17.Qh6 + -}) (14... Bxa6 15. Nxc6 Qd7 16. Nxe7) 15. Bxh6 Nd5 16. Qh3 {Black must lose at least the exchange} Nxc3 (16... Bxa6 17. Nxc6 Qd6 18. Nxd5 exd5 19. Nxe7 Qxe7 20. Bxf8 {+6.0})
+17. Bxb7 Ne2 18. Kh1 Ncxd4 19. Bxf8 Bxf8 20. Bxa8 Qxa8 21. Qe3 Qd5 22. Rae1 Bd6 23. f4 g5 24. Rxe2 {1-0 Plaskett,J - Arkell,K; London 1991 +8.5}
+*
