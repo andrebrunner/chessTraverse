@@ -1,10 +1,21 @@
 import chess
 import chess.pgn
+#import chess.engine
+
+def evalBoard(board):
+    engine = chess.engine.SimpleEngine.popen_uci("C:\Stockfish\stockfish_15.1_win_x64_popcnt\stockfish-windows-2022-x86-64-modern.exe")
+    info = engine.analyse(board, chess.engine.Limit(time=0.1))
+    engine.quit()
+    return info["score"]
+
 
 def traverseVariations(variation, mainMove, board) :
-    board.push(mainMove)
+    score = evalBoard(board)
+    print("before: " + score)
+    board.push(mainMove) 
     print('----------------------------------')
-    print(board)
+    score = evalBoard(board)
+    print("after: " + score)
     print('----------------------------------')
     for childVaratiation in variation.variations:
       varBoard = chess.Board(board.fen())
