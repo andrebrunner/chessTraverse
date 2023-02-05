@@ -13,18 +13,18 @@ class PgnTraverse:
         self.board = chess.Board()
 
     def generateFenArray(self):
-        self.traverseVariations(self.variations[0], self.variations.move, self.board)
+        self.traverseVariations(self.variations, self.variations.move, self.board)
         return self.fenArray
 
 
-    def traverseVariations(self, variation, mainMove, board) :
+    def traverseVariations(self, variations, mainMove, board) :
         try:
             board.push(mainMove) 
             print(board)
             self.fenArray.append(board.fen())
         except:
             print('ERROR')
-        for childVaratiation in variation.variations:
+        for childVaratiation in variations:
             print("-----------------------------------")
             varBoard = chess.Board(board.fen())
-            self.traverseVariations(childVaratiation, childVaratiation.parent.move,  varBoard) 
+            self.traverseVariations(childVaratiation, childVaratiation.move,  varBoard) 

@@ -5,6 +5,7 @@ import sys
 import getopt
 from pgnTraverse import PgnTraverse
 from fenEvaluator import FenEvaluator
+from fenAnnotator import FENAnnotator
 
 
 #-i
@@ -12,7 +13,7 @@ inputFile = "C:/Users/andre/develop/chessTraverse/x.pgn"
 #-o
 outputFile="zzz.pgn"
 #-d
-engineDepth=1
+engineDepth=10
 #-e
 enginePath="C:\Stockfish\stockfish_15.1_win_x64_popcnt\stockfish-windows-2022-x86-64-modern.exe"
 # total arguments
@@ -51,10 +52,7 @@ positionCache = {
 }
 
 pgnTraverser = PgnTraverse()
-
-
 pgnTraverser.setup(first_game.variations[0])
-
 fenList = pgnTraverser.generateFenArray()
 
 print( fenList)
@@ -69,3 +67,10 @@ for fen in evaluatedFens:
     print(evaluatedFens[fen])
 
 
+fenAnnotator = FENAnnotator()
+fenAnnotator.setup(first_game.variations[0], evaluatedFens)
+fenAnnotator.annotate()
+
+print(first_game)
+
+print(first_game, file=open(outputFile, "w"), end="\n\n")
