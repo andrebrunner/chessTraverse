@@ -8,12 +8,13 @@ from fenEvaluator import FenEvaluator
 from fenAnnotator import FENAnnotator
 
 
+
 #-i
-inputFile = "C:/Users/andre/develop/chessTraverse/x.pgn"
+inputFile = "C:/Users/andre/develop/pgns/VanGeet_konsolidiert.pgn"
 #-o
-outputFile="zzz.pgn"
+outputFile="VanGeet_evaluiert.pgn"
 #-d
-engineDepth=10
+engineDepth=20
 #-e
 enginePath="C:\Stockfish\stockfish_15.1_win_x64_popcnt\stockfish-windows-2022-x86-64-modern.exe"
 # total arguments
@@ -68,7 +69,7 @@ for fen in evaluatedFens:
 
 
 fenAnnotator = FENAnnotator()
-fenAnnotator.setup(first_game.variations[0], evaluatedFens)
+fenAnnotator.setup(first_game.variations[0], evaluatedFens, enginePath, engineDepth)
 fenAnnotator.annotate()
 
 print(first_game)
