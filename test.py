@@ -3,6 +3,7 @@ import chess.pgn
 import chess.engine
 import sys
 import getopt
+import threading
 
 #-i
 inputFile = "C:/Users/andre/develop/chessTraverse/x.pgn"
@@ -55,21 +56,26 @@ def evaluteAndPrint(board):
 
 def traverseVariations(variation, mainMove, board) :
   print('##################################')
-  info_before = evaluteAndPrint(board)
-  score_before = info_before.get('score').white().cp
-  eventual_Variation = board.variation_san(info_before.get('pv')) 
-  board.push(mainMove) 
-  print('----------------------------------')
-  info_after = evaluteAndPrint(board)
-  score_after = info_after.get('score').white().cp
+  score_after = 0
+  score_before = 0
+  try:
+    info_before = evaluteAndPrint(board)
+    score_before = info_before.get('score').white().cp
+    eventual_Variation = board.variation_san(info_before.get('pv')) 
+    board.push(mainMove) 
+    print('----------------------------------')
+    info_after = evaluteAndPrint(board)
+    score_after = info_after.get('score').white().cp
+  except:
+     print('ERROR')
   if abs(score_after - score_before) > 100:
-    variation.comment = variation.comment + ' -### ' +str(score_after) +' vs. ' + str(score_before) + eventual_Variation + ' ###-' 
+    variation.comment = variation.comment + ' -### ' +str(score_after) +' vs. ' + str(score_before)  +' ### ' + eventual_Variation + ' ###-' 
     print('??????????')
     print(mainMove.uci())
     print(board.fen())
   print('##################################')
   if len(variation.variations)==0:
-    variation.comment = variation.comment + ' -### ' +str(score_after) +' vs. ' + str(score_before) +' ###-'
+    variation.comment = variation.comment + ' -### ' +str(score_after) +' ###-'
   for childVaratiation in variation.variations:
     varBoard = chess.Board(board.fen())
     traverseVariations(childVaratiation, childVaratiation.move,  varBoard)  
