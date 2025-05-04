@@ -10,13 +10,13 @@ from fenAnnotator import FENAnnotator
 
 
 #-i
-inputFile = "C:/Users/andre/develop/pgns/VanGeet_konsolidiert.pgn"
+inputFile = "C:/Users/andre/develop/pgns/qc2.pgn"
 #-o
-outputFile="VanGeet_evaluiert.pgn"
+outputFile="qc2_evaluiert.pgn"
 #-d
 engineDepth=20
 #-e
-enginePath="C:\Stockfish\stockfish_15.1_win_x64_popcnt\stockfish-windows-2022-x86-64-modern.exe"
+enginePath="C:\Stockfish\stockfish-windows-x86-64-avx2\stockfish\stockfish-windows-x86-64-avx2.exe"
 # total arguments
 n = len(sys.argv)
 print("Total arguments passed:", n)
